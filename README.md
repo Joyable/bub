@@ -13,7 +13,7 @@ Solution: Bub.  Hook it up to your slack channel and use it to track who's using
 2. Open `lib/bub_bot.rb` and:
   - modify the `APPS` constant to be the short names of your servers (eg `staging-1` )
   - modify the `APP_PREFIX` constant to be whatever you prefix your shortnames with to get your actual heroku project names (eg "initech-" if your server is called `initech-staging-1`)
-3. Push to heroku
+3. Push to heroku (or aptible)
 4. Set up your config variables (`heroku config:set FOO=bar`)
   - `SLACK_TOKEN=AbCdEf123456`
   - `SLACK_URL="https://hooks.slack.com/services/ABC123/DEF456/gHiJk789`
