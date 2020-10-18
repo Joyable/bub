@@ -11,7 +11,7 @@ end
 class BubBot
   def call(env)
     request = Rack::Request.new(env)
-
+    puts request.inspect
     if request.path == '/slack_hook' && request.post?
       SlackInterface.new.handle_slack_webhook(request.body.read)
       return [200, {}, []]
